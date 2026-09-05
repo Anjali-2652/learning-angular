@@ -1,0 +1,14 @@
+<div class="flex justify-center  pt-20 bg-black h-screen">
+<div class="text-white">
+<h1 class=" text-[100px] font-bold text-center">{{count}}</h1>
+
+<div class="flex gap-x-10 justify-center mt-3 items-center">
+    <button  (click) = handleDecrement()
+    class="text-2xl shadow-inner py-2 px-6 shadow-white rounded-lg hover:border-2 border-white">Decrement</button>
+    <button (click) = "handleReset()"
+     class="text-2xl shadow-inner py-2 px-6 shadow-white rounded-lg hover:border-2 border-white">Reset</button>
+    <button (click) = "handleIncrement()"
+    class="text-2xl shadow-inner py-2 px-6 shadow-white rounded-lg hover:border-2 border-white">Incrememt</button>
+</div>
+</div>
+</div>
