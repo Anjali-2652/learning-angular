@@ -12,13 +12,44 @@
 <button (click) = "handleClickEvent()"
 class="bg-blue-900 text-gray-100 mt-10 px-8 py-2 rounded-3xl ml-5 font-semibold text-xl">Click Me</button> -->
 
-
 <!-- <app-event/> -->
-
-
-<a routerLink="">Home</a>
-<a routerLink="/about">About Us</a>
-<a routerLink="/services">Services</a>
-<a routerLink="/gallery">Gallery</a>
-<a routerLink="/contact">Contact Us</a>
+<nav class="pb-5 pt-10">
+  <ul class="flex gap-x-6 text-xl justify-center border-b-2  border-r-2 border-l-2 mx-[400px] pb-10">
+    <li>
+      <a
+        routerLink=""
+        routerLinkActive="bg-black text-gray-100 font-thin border-none"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="rounded-full px-4 py-1 text-xl border border-gray-400"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/about"
+        routerLinkActive="bg-black text-gray-100 font-thin border-none"
+        class="rounded-full px-4 py-1 text-md border border-gray-400 "
+        >About Us</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/project"
+        routerLinkActive="bg-black text-gray-100  font-thin border-none"
+        class="rounded-full px-4 py-1 text-xl border border-gray-400"
+        >Project</a
+      >
+    </li>
+    <!-- <li>
+      <a routerLink="/services">Services</a>
+    </li>
+    <li>
+      <a routerLink="/gallery">Gallery</a>
+    </li>
+    <li>
+      <a routerLink="/contact">Contact Us</a>
+    </li> -->
+  </ul>
+</nav>
 <router-outlet></router-outlet>
