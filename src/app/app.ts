@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
+import { StringInterpolation } from "./string-interpolation/string-interpolation";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, StringInterpolation],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

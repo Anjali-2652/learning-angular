@@ -5,6 +5,9 @@ import { Services } from './services/services';
 import { Gallery } from './gallery/gallery';
 import { Contact } from './contact/contact';
 import { Project } from './project/project';
+import { Form } from './form/form';
+import { StringInterpolation } from './string-interpolation/string-interpolation';
+import { Calculator } from './calculator/calculator';
 
 export const routes: Routes = [
     {path: "", component: Home},
@@ -12,6 +15,10 @@ export const routes: Routes = [
     // {path: "services", component: Services},
     // {path: "gallery", component: Gallery},
     // {path: "contact", component: Contact},
-    {path: "project", component: Project}
+    {path: "project", component: Project},
+    {path: "form", component : Form},
+    {path: "interpolation", component :StringInterpolation},
+    {path: "calculator", component :Calculator}
+
     
 ];
