@@ -7,8 +7,26 @@ import { Component } from '@angular/core';
   styleUrl: './calculator.css',
 })
 export class Calculator {
-  display: String = "";
+  value: String = "";
 
+appendNumber(input: string){
+this.value += input ;
+}
 
+clear(): void{
+  this.value = ""
+}
+
+delete(): void{
+  this.value = this.value.slice(0,-1)
+}
+
+calculate(): void{
+  try{
+    this.value = eval(this.value as string).toString();
+  }catch{
+    this.value = "Error"
+  }
+}
 
 }

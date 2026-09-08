@@ -1,28 +1,38 @@
-<p>Lets simplifies your work</p>
-<div class="w-fit mt-10 items-center flex  justify-center mx-auto border-2 border-black rounded-lg  py-2 px-2">
+<p>Calculator</p>
+<div
+  class="w-fit mt-10 items-center flex justify-center mx-auto border-2 border-black rounded-lg py-2 px-2"
+>
   <div>
-    <p><input type="number" class=" w-full py-2 border-2  border-black rounded-lg " /></p>
+    <p>
+      <input
+        type="text"
+        [value]="value"
+        readonly
+        class="w-full py-2 border-2 border-black rounded-lg"
+      />
+    </p>
 
-    <div class="grid grid-cols-4 gap-x-2 gap-y-2 border-2 border-black rounded-lg  mt-2 px-4 py-4">
-      <button>C</button>
-      <button >X</button>
-      <button>/</button>
-      <button>%</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-      <button>0</button>
-      <button>.</button>
-      <button>=</button>
+    <div class="grid grid-cols-4 gap-x-2 gap-y-2 border-2 border-black rounded-lg mt-2 px-4 py-4">
+      <input type="button" value="C" (click)="clear()" />
+      <input type="button" value="X" (click)="delete()" />
+      <input type="button" value="%" (click)="appendNumber('%')" />
+      <input type="button" value="/" (click)="appendNumber('/')" />
+      <input type="button" value="7" (click)="appendNumber('7')" />
+      <input type="button" value="8" (click)="appendNumber('8')" />
+      <input type="button" value="9" (click)="appendNumber('9')" />
+      <input type="button" value="*" (click)="appendNumber('*')" />
+      <input type="button" value="4" (click)="appendNumber('4')" />
+      <input type="button" value="5" (click)="appendNumber('5')" />
+      <input type="button" value="6" (click)="appendNumber('6')"/>
+      <input type="button" value="-" (click)="appendNumber('-')" />
+      <input type="button" value="1" (click)="appendNumber('1')"/>
+      <input type="button" value="2" (click)="appendNumber('2')" />
+      <input type="button" value="3" (click)="appendNumber('3')" />
+      <input type="button" value="+" (click)="appendNumber('+')" />
+      <input type="button" value="0" (click)="appendNumber('0')"/>
+      <input type="button" value="." (click)="appendNumber('.')"/>
+      <input type="button" value="=" (click)="calculate()" />
+
     </div>
   </div>
 </div>
