@@ -1,0 +1,21 @@
+<p>student Enrollment Form</p>
+
+<form #studentForm = "ngForm" (ngSubmit)="onSubmit(studentForm)">
+<p><input type="text" [(ngModel)] = "student.name" placeholder = "Enter Name"></p>
+
+<p><label>Gender:</label></p>
+<input type= "radio" name = "gender" value="Male" [(ngModel)] = "student.gender">Male
+<input type= "radio" name = "gender" value="Female" [(ngModel)] = "student.gender">Female
+
+<p><input type= "checkbox" name = "isActive" [(ngModel)] = "student.isActive"></p>
+
+<p><select [(ngModel)] = "student.skills" multiple>
+  <option value="">Select Course</option>
+  <option value="Computer Science">Computer Science</option>
+  <option value="Mathematics">Mathematics</option>
+  <option value="Physics">Physics</option>
+</select></p>
+
+<p><button type = "submit">Register</button></p>
+
+</form>

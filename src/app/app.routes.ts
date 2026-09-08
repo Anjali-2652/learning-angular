@@ -8,6 +8,7 @@ import { Project } from './project/project';
 import { Form } from './form/form';
 import { StringInterpolation } from './string-interpolation/string-interpolation';
 import { Calculator } from './calculator/calculator';
+import { Student } from './student/student';
 
 export const routes: Routes = [
     {path: "", component: Home},
@@ -18,7 +19,8 @@ export const routes: Routes = [
     {path: "project", component: Project},
     {path: "form", component : Form},
     {path: "interpolation", component :StringInterpolation},
-    {path: "calculator", component :Calculator}
+    {path: "calculator", component :Calculator},
+    {path: "student", component :Student}
 
     
 ];
