@@ -5,7 +5,7 @@ import { StringInterpolation } from "./string-interpolation/string-interpolation
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, StringInterpolation],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
