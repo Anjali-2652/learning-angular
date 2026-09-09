@@ -15,20 +15,20 @@
     <div class="grid grid-cols-4 gap-x-2 gap-y-2 border-2 border-black rounded-lg mt-2 px-4 py-4">
       <input type="button" value="C" (click)="clear()" />
       <input type="button" value="X" (click)="delete()" />
-      <input type="button" value="%" (click)="appendNumber('%')" />
-      <input type="button" value="/" (click)="appendNumber('/')" />
+      <input type="button" value="%" (click)="pressOperator('%')" />
+      <input type="button" value="/" (click)="pressOperator('/')" />
       <input type="button" value="7" (click)="appendNumber('7')" />
       <input type="button" value="8" (click)="appendNumber('8')" />
       <input type="button" value="9" (click)="appendNumber('9')" />
-      <input type="button" value="*" (click)="appendNumber('*')" />
+      <input type="button" value="*" (click)="pressOperator('*')" />
       <input type="button" value="4" (click)="appendNumber('4')" />
       <input type="button" value="5" (click)="appendNumber('5')" />
       <input type="button" value="6" (click)="appendNumber('6')"/>
-      <input type="button" value="-" (click)="appendNumber('-')" />
+      <input type="button" value="-" (click)="pressOperator('-')" />
       <input type="button" value="1" (click)="appendNumber('1')"/>
       <input type="button" value="2" (click)="appendNumber('2')" />
       <input type="button" value="3" (click)="appendNumber('3')" />
-      <input type="button" value="+" (click)="appendNumber('+')" />
+      <input type="button" value="+" (click)="pressOperator('+')" />
       <input type="button" value="0" (click)="appendNumber('0')"/>
       <input type="button" value="." (click)="appendNumber('.')"/>
       <input type="button" value="=" (click)="calculate()" />
