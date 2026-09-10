@@ -1,0 +1,7 @@
+<p>addition-example works!</p>
+<form [formGroup]="form" (ngSubmit)="calculate()">
+    <input type="number" formControlName = "num1" placeholder="enter first number">
+    <input type="number" formControlName = "num2" placeholder="enter second3 number">
+    <button type = "submit" [disabled]="form.invalid"> Add</button>
+</form>
+<p>{{result}}</p>

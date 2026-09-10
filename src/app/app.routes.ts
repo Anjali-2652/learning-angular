@@ -10,6 +10,7 @@ import { StringInterpolation } from './string-interpolation/string-interpolation
 import { Calculator } from './calculator/calculator';
 import { Student } from './student/student';
 import { ReactiveForms } from './reactive-forms/reactive-forms';
+import { AdditionExample } from './addition-example/addition-example';
 
 export const routes: Routes = [
     {path: "", component: Home},
@@ -22,7 +23,8 @@ export const routes: Routes = [
     {path: "interpolation", component :StringInterpolation},
     {path: "calculator", component :Calculator},
     {path: "student", component :Student},
-{path: "registration", component :ReactiveForms}
+{path: "registration", component :ReactiveForms},
+{path: "reactive-addition", component :AdditionExample}
 
     
 ];
