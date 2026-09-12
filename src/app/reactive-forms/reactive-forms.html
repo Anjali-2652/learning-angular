@@ -6,14 +6,15 @@
     <div class="text-white mt-4">
       <h2 class="font-semibold text-2xl">Welcome</h2>
       <p class="text-wrap text-white/80 leading-7">
-        Join our platform and take the next step
-        toward your professional future.
+        Join our platform and take the next step toward your professional future.
       </p>
 
-     <button class="text-blue-800 bg-white font-semibold px-4 mt-4 text-xl py-1 items-center rounded-2xl">Login</button>
-     
+      <button
+        class="text-blue-800 bg-white font-semibold px-4 mt-4 text-xl py-1 items-center rounded-2xl"
+      >
+        Login
+      </button>
     </div>
-   
   </div>
   <div
     class="bg-gray-100 h-[450px] w-[750px] my-6 absolute right-0 rounded-tl-full rounded-bl-full px-10 py-4"
@@ -39,11 +40,29 @@
         Hirer
       </button>
     </div>
-    <form [formGroup]="form" (ngSubmit)="info()">
-      <!-- <input formControlName = "name"> -->
-      <!-- <label>Email</label>
-      <input formControlName="email" class="border-2 border-black" />
-      <button [disabled]="form.invalid">Submit</button> -->
-    </form>
+
+    <!-- for employee ...  -->
+    @if (selectedRole === 'employee') {
+      <div class="text-center">
+        <h1 class="font-bold text-gray-700 text-3xl mt-14 mb-6">Apply as Employee</h1>
+        <form [formGroup]="form" (ngSubmit)="info()">
+          <div class="grid grid-cols-2 gap-y-4 justify-center items-center px-[100px]">
+            <div>
+              <input type="text" name="first-name" class=" border border-gray-800  rounded-lg  text-gray-800  px-4"  placeholder="FirstName * " required/>
+            </div>
+            <div>
+              <input type="text" name="last-name" class=" border border-gray-800  rounded-lg px-4 text-gray-800 "  placeholder="LastName* " required/>
+            </div>
+            <div>
+              <input type="email" name="email" class=" border border-gray-800  rounded-lg px-4 text-gray-800 "  placeholder="enter your email * " required/>
+            </div>
+            <div>
+              <input type="number" name="phone" class=" border border-gray-800  rounded-lg px-4 text-gray-800 "  placeholder="enter your phone no.* " required/>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    }
   </div>
 </div>
