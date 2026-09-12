@@ -1,5 +1,17 @@
 <p>reactive-forms works!</p>
-<form [formGroup]="form" (ngSubmit)="info()">
-    <input formControlName = "email">
-    <button [disabled]="form.invalid">Submit</button>
-</form>
+<div class=" relative bg-gradient-to-r from-blue-900 via-blue-500 to-blue-300 h-[500px] w-[1000px] mb-10 flex justify-center mx-auto">
+  <div class=" bg-gray-100 h-[450px] w-[750px] my-6 absolute right-0 rounded-tl-full rounded-bl-full px-10 py-4">
+    <div class="flex rounded-full py-2 px-10 font-semibold text-white gap-x-6 w-fit absolute right-0 mr-6">
+        <div>
+    <button class=" bg-blue-600 rounded-l-full" (click)="changeState()"  [ngStyle] = "isActive ? {color: 'blue', background: 'white', } : {}">Employee</button></div>
+    <div>
+    <button class=" bg-blue-600 rounded-r-full" (click)="changeState()"  [ngStyle] = "isActive ? {color: 'blue', background: 'white', } : {}">Hirer</button></div>
+    </div> 
+    <form [formGroup]="form" (ngSubmit)="info()">
+      <!-- <input formControlName = "name"> -->
+      <!-- <label>Email</label>
+      <input formControlName="email" class="border-2 border-black" />
+      <button [disabled]="form.invalid">Submit</button> -->
+    </form>
+  </div>
+</div>

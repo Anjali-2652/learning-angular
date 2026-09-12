@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Services } from './services/services';
-import { Gallery } from './gallery/gallery';
 import { Contact } from './contact/contact';
 import { Project } from './project/project';
 import { Form } from './form/form';

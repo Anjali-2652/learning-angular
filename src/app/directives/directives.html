@@ -1,6 +1,46 @@
 <p>directives works!</p>
-<p *ngIf  = "isLoggedin"> User is LoggedIn</p>
-<p *ngIf = "!isLoggedin"> User is Logged Out</p>
+<p>ngIf works</p>
+<!-- ngif directives  -->
+<p *ngIf="isLoggedin">User is LoggedIn</p>
+<p *ngIf="!isLoggedin">User is Logged Out</p>
 
 <button (click)="changeLogin()">Click to Change</button>
 
+<!-- ng for directives  -->
+<p>ngFor works</p>
+<ul>
+  <li *ngFor="let item of courses">
+    {{ item }}
+  </li>
+</ul>
+
+<!-- ngswithch -->
+<p>ngswithch works</p>
+<button (click)="changeRole('admin')">Admin</button>
+<button (click)="changeRole('user')">User</button>
+<button (click)="changeRole('guest')">Guest</button>
+
+<div [ngSwitch]= "role">
+  <div *ngSwitchCase="'admin'">
+    <p>Welcome to admin dashboard</p>
+  </div>
+  <div *ngSwitchCase="'user'">
+    <p>Welcome to user dashboard</p>
+  </div>
+  <div *ngSwitchCase="'guest'">
+    <p>Welcome to guest dashboard</p>
+  </div>
+  <div *ngSwitchDefault>
+    <p>Please login to continue.</p>
+  </div>
+</div>
+<hr/>
+<p>ngClass Examples</p>
+<p [ngClass]="{active: isActive, error: hasError}">
+    Welcome User!
+</p>
+
+<p>ngStyle</p>
+<p [ngStyle]="{color: hasError ? 'red': 'green'}">
+Message
+</p>

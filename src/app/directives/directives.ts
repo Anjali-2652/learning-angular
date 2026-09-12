@@ -9,8 +9,17 @@ import { Component } from '@angular/core';
 })
 export class Directives {
 isLoggedin:boolean = false;
-
+courses = ["c", "c++", "js", "python"]
+role:string = 'admin'
 changeLogin(){
   this.isLoggedin = !this.isLoggedin
 }
+changeRole(r:string){
+this.role = r;
+}
+
+// for attribute directives 
+isActive: boolean = true;
+hasError:boolean = false;
+
 }
