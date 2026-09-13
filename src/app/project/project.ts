@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ReversePipe } from '../reverse-pipe';
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule],
+  imports: [CommonModule,ReversePipe ],
   templateUrl: './project.html',
   styleUrl: './project.css',
 })
