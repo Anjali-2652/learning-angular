@@ -23,7 +23,8 @@ export const routes: Routes = [
     {path: "student", component :Student},
 {path: "registration", component :ReactiveForms},
 {path: "reactive-addition", component :AdditionExample}, 
-{path: "directives", component :Directives}
+{path: "directives", component :Directives},
+{path: "services", component :Services}
 
     
 ];

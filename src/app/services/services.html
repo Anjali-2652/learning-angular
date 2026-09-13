@@ -1,1 +1,10 @@
 <p>services works!</p>
+<p>Username is {{name}}</p>
+<button (click)="changeName()">Change Name</button>
+
+<p class="font-bold text-2xl">product list through apis</p>
+<ul>
+    <li *ngFor = "let item of products">
+        {{item.title}}
+</li>
+</ul>
