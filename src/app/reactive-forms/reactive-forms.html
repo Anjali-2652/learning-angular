@@ -4,7 +4,7 @@
 >
   <div class="flex justify-center items-start px-10 py-28 w-[320px]">
     <div class="text-white mt-4">
-      <h2 class="font-semibold text-2xl">Welcome</h2>
+      <h2 class="font-semibold text-3xl">Welcome</h2>
       <p class="text-wrap text-white/80 leading-7">
         Join our platform and take the next step toward your professional future.
       </p>
@@ -46,165 +46,173 @@
       <div class="text-center">
         <h1 class="font-bold text-gray-700 text-3xl mt-14 mb-10">Apply as Employee</h1>
       </div>
-    
 
+      <form>
+        <div class="grid grid-cols-2 gap-y-4 justify-center gap-x-10 items-center px-[100px]">
+          <div>
+            <input
+              type="text"
+              name="first-name"
+              class="border border-gray-800 rounded-lg text-gray-800 px-4 py-2"
+              placeholder="FirstName * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="last-name"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="LastName* "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your email * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="phone"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your phone no.* "
+              required
+            />
+          </div>
+          <div>
+            <select class="w-full border border-gray-800 rounded-lg px-4 text-gray-400 py-2">
+              <option value="Male">Male</option>
+              <option value="Male">Female</option>
+              <option value="Male">Other</option>
+              <option value="Male">Prefer not to say</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="address"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your address * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="text"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your password* "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="confirm password* "
+              required
+            />
+          </div>
+        </div>
+        <button
+          class="bg-blue-800 text-white font-semibold mt-4 ml-[100px] px-6 w-[70%] text-xl py-2 items-center rounded-2xl"
+        >
+          Register
+        </button>
+      </form>
+    }
 
-    <form>
-      <div class="grid grid-cols-2 gap-y-6 justify-center gap-x-10 items-center px-[100px]">
-        <div>
-          <input
-            type="text"
-            name="first-name"
-            class="border border-gray-800 rounded-lg text-gray-800 px-4 py-2"
-            placeholder="FirstName * "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            name="last-name"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="LastName* "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your email * "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="number"
-            name="phone"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your phone no.* "
-            required
-          />
-        </div>
-        <div >
-          <select class=" w-full border border-gray-800 rounded-lg px-4 text-gray-400 py-2">
-            <option value="Male">Male</option>
-            <option value="Male">Female</option>
-            <option value="Male">Other</option>
-            <option value="Male" >Prefer not to say</option>
-          </select>
-        </div>
-        <div>
-          <input
-            type="text"
-            name="address"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your address * "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="text"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your password* "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="password"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="confirm password* "
-            required
-          />
-        </div>
-      </div>
-    </form>
-  }
-
-      @if (selectedRole === 'hirer') {
+    @if (selectedRole === 'hirer') {
       <div class="text-center">
         <h1 class="font-bold text-gray-700 text-3xl mt-14 mb-10">Apply as Hirer</h1>
       </div>
-          <form >
-      <div class="grid grid-cols-2 gap-y-6 justify-center gap-x-10 items-center px-[100px]">
-        <div>
-          <input
-            type="text"
-            name="company-name"
-            class="border border-gray-800 rounded-lg text-gray-800 px-4 py-2"
-            placeholder="Company Name * "
-            required
-          />
+      <form>
+        <div class="grid grid-cols-2 gap-y-4 justify-center gap-x-10 items-center px-[100px]">
+          <div>
+            <input
+              type="text"
+              name="company-name"
+              class="border border-gray-800 rounded-lg text-gray-800 px-4 py-2"
+              placeholder="Company Name * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="contact-person"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="Contact-Person* "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your email * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="phone"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your phone no.* "
+              required
+            />
+          </div>
+          <div>
+            <select class="w-full border border-gray-800 rounded-lg px-4 text-gray-400 py-2">
+              <option value="Male">Male</option>
+              <option value="Male">Female</option>
+              <option value="Male">Other</option>
+              <option value="Male">Prefer not to say</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="address"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your address * "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="text"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="enter your password* "
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
+              placeholder="confirm password* "
+              required
+            />
+          </div>
         </div>
-        <div>
-          <input
-            type="text"
-            name="contact-person"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="Contact-Person* "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your email * "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="number"
-            name="phone"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your phone no.* "
-            required
-          />
-        </div>
-        <div >
-          <select class=" w-full border border-gray-800 rounded-lg px-4 text-gray-400 py-2">
-            <option value="Male">Male</option>
-            <option value="Male">Female</option>
-            <option value="Male">Other</option>
-            <option value="Male" >Prefer not to say</option>
-          </select>
-        </div>
-        <div>
-          <input
-            type="text"
-            name="address"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your address * "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="text"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="enter your password* "
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="password"
-            class="border border-gray-800 rounded-lg px-4 text-gray-800 py-2"
-            placeholder="confirm password* "
-            required
-          />
-        </div>
-      </div>
-    </form>
+        <button
+          class="bg-blue-800 text-white font-semibold mt-4 ml-[100px] px-6 w-[70%] text-xl py-2 items-center rounded-2xl"
+        >
+          Register
+        </button>
+      </form>
     }
   </div>
 </div>
