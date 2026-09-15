@@ -11,6 +11,8 @@ import { ReactiveForms } from './reactive-forms/reactive-forms';
 import { AdditionExample } from './addition-example/addition-example';
 import { Directives } from './directives/directives';
 import { ApiPractice } from './api-practice/api-practice';
+import { Login } from './login/login';
+import { Profile } from './profile/profile';
 
 export const routes: Routes = [
     {path: "", component: Home},
@@ -26,7 +28,9 @@ export const routes: Routes = [
 {path: "reactive-addition", component :AdditionExample}, 
 {path: "directives", component :Directives},
 {path: "services", component :Services},
-{path: "api-practice", component :ApiPractice}
+{path: "api-practice", component :ApiPractice},
+{path: "login", component :Login},
+{path: "dashboard", component :Profile}
 
     
 ];

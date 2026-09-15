@@ -1,1 +1,15 @@
-<h1 class="font-bold bg-black text-white">Login Component</h1>
+<div>
+    <label>Username:</label>
+    <input type="text" [(ngModel)] = "username" placeholder="enter your username">
+    <label>Password:</label>
+    <input type="password" [(ngModel)] = "password" placeholder="enter your password">
+
+    <button (click)="verifyLogin()">Login</button>
+
+    <p>{{errorMessage}}</p>
+
+<p>use demo credentials:
+    "username": "johnd",
+    "password": "m38rmF$",
+</p>
+</div>
